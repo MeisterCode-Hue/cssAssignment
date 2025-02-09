@@ -1,0 +1,57 @@
+body {
+    background-color: #aec3b0;
+    font-family: "DM Serif Text", serif;
+    margin: 0;
+    padding: 20px;
+}
+ .container {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #e3eed4;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+ }
+
+h1 {
+    text-align: center;
+    margin-bottom: 24vh;
+}
+
+.info {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 4vh;
+}
+
+.assignments {
+    life-style: none;
+    padding: 0;
+}
+
+.assignments li {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #c8d9b7;
+    border-radius: 5px;
+}
+
+.assignments li:nth-child(odd) {
+    background-color: #c8d9b7;
+}
+
+.assignments li h2 {
+    margin-top: 0;
+    font-size: 5vh;
+}
+
+.assignments li p {
+    margin: 5px 0 0;
+    font-size: 3vh;
+}
+
+.assignments li a {
+    font-size: 2vh;
+    text-decoration:none;
+    color: #4f4f4f;
+}

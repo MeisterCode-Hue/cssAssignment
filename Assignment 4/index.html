@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebDev</title>
+    <link rel="icon" type="jpg" href="./Assets/images/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="container">
+        <div class="left-panel">
+
+        <div class="status-bar">
+            <div class="time">10:47</div>
+            <div class="icons">
+                <div class="icon"><i class="fa-solid fa-signal"></i></div>
+                <div class="icon"><i class="fa-solid fa-wifi"></i></div>
+                <div class="icon"><i class="fa-solid fa-battery-three-quarters"></i></div>
+            </div>
+        </div>
+
+
+            <img src="./Assets/images/logo.png" alt="Logo" class="logo">
+            <h2>For Individuals</h2>
+            <p>
+                Start benefiting from the wellness experience. For <br>companies looking on increasing productivity, and improving <br> organization wellness.
+            </p>
+        </div>
+
+        <div class="right-panel">
+            <div class="form-border">
+                <form>
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" name="first_name" placeholder="Enter first name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" name="last_name" placeholder="Enter last name">
+                        </div>
+                    </div>
+            
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="gender">Gender</label>
+                            <select id="gender" name="gender">
+                                <option value="">Select here</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="dob">Date of Birth</label>
+                            <input type="date" id="dob" name="dob" placeholder="Select here">
+                        </div>
+                    </div>
+                   
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="weight">Weight (KG)</label>
+                            <input type="number" id="weight" name="weight" placeholder="Enter weight">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="height">Height (CM)</label>
+                            <input type="number" id="height" name="height" placeholder="Enter height here">
+                        </div>
+                    </div>
+              
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="activity-level">Activity Level</label>
+                            <select id="activity-level" name="activity_level">
+                                <option value="">Select here</option>
+                             
+                                <option value="low">Low</option>
+                                <option value="moderate">Moderate</option>
+                                <option value="high">High</option>
+                            </select>
+                        </div>
+
+                        <!-- <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password">
+                        </div> -->
+
+                        <div id="password" class="form-group">
+                            <label for="password"><br>Password</label>
+                            <input type="password" id="password" name="password" placeholder="Enter password">
+                    </div>
+             
+                    <button type="submit">Register</button>
+                
+                    <p class="terms">
+                        By clicking Register, you agree to our <a href="#">Terms of Use</a> and our <a href="#">Privacy Policy</a>.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
