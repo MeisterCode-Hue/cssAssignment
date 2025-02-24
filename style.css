@@ -1,57 +1,133 @@
-body {
-    background-color: #aec3b0;
-    font-family: "DM Serif Text", serif;
-    margin: 0;
-    padding: 20px;
+:root {
+    --primary-color: #333;
+    --secondary-color: #666;
+    --background-color: #556B2F;  /* olive green background */
+    --card-background: #E2E8D5;   /* light olive green for cards */
+    --accent-color: #3C4F1E;      /* darker olive green for accents */
 }
- .container {
-    max-width: 500px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--card-background);
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.header-content {
+    max-width: 1200px;
     margin: 0 auto;
-    background-color: #e3eed4;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
- }
+    text-align: center;
+}
 
 h1 {
-    text-align: center;
-    margin-bottom: 24vh;
+    font-family: 'DM Serif Text', serif;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
 }
 
-.info {
-    margin-bottom: 20px;
-    text-align: center;
-    font-size: 4vh;
+.student-info {
+    color: var(--secondary-color);
+    font-size: 1.1rem;
 }
 
-.assignments {
-    life-style: none;
-    padding: 0;
+.student-info .divider {
+    margin: 0 1rem;
 }
 
-.assignments li {
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #c8d9b7;
-    border-radius: 5px;
+main {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 2rem;
 }
 
-.assignments li:nth-child(odd) {
-    background-color: #c8d9b7;
+.assignments-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
 }
 
-.assignments li h2 {
-    margin-top: 0;
-    font-size: 5vh;
+.assignment-card {
+    background-color: var(--card-background);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.assignments li p {
-    margin: 5px 0 0;
-    font-size: 3vh;
+.assignment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-.assignments li a {
-    font-size: 2vh;
-    text-decoration:none;
-    color: #4f4f4f;
+.card-content {
+    padding: 2rem;
+}
+
+.assignment-number {
+    font-size: 0.9rem;
+    color: var(--accent-color);
+    font-weight: 600;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.assignment-card h2 {
+    font-family: 'DM Serif Text', serif;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.assignment-card p {
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+}
+
+.view-project {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--accent-color);
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--accent-color);
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    background-color: transparent;
+}
+
+.view-project:hover {
+    background-color: var(--accent-color);
+    color: var(--card-background);
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .student-info {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .student-info .divider {
+        display: none;
+    }
+
+    .assignments-grid {
+        grid-template-columns: 1fr;
+    }
 }
